@@ -1,8 +1,13 @@
 language: node_js
 node_js:
-- "7.2"
+- '7.2'
 beforescript:
 - npm install -g gulp
 - npm install
 script:
 - gulp package-app
+deploy:
+  api_key:
+    secure: OU2UJuQ5sjKcbMMKkJIOIJege6dD/xJ/GWYsVWwaqnTAVjyGr6JzqRCdwjbX/QQ8yf6LKTXTRTAskhN6Zr52I3Tag7sXLPCE5qIS0EWkznzAMyLTy9xGx/L0SwArMhWtdiRytRThl5NxFqeTwdGWWc61gCsjvl4AJvYDULMqoRkIfxgc/2Pb0kcM4ch9ZoGIiG7pyocDshnq//h74lN/kKE8J5OrexiQh0ebSJhaxPHzd1G3adnDirN6XCDs2wEc9UJ63WPBDAQzEZ7JkORgwvFGY+w5jIVQb+/6kKhtn48ak2Kark+xiFpUFKT7ZMuIBHsez3EFARbozJGa19KaffBMztJmnvwKdkxHerkClQwUxVqAlx5FJwwrBSiHUKXnB27sULCET+MpRLlcIxAfpJcoU3IL1rosRdRc48XXJgtfWjNz1XqazS67FRyX988FicZooE2M3FTzMl6aSmMTr1W8NXIa5h66ZdWZU1Nhdq5ZFnlp+3Qr9zZvNfhmtE22WYzz+7cMTjWm1JPiPS+rF5YbqO8lrzyBML5ukSwTmdpjbkCWddQAKc7VO2mG8g+JA50CyWGKot2UeX1QVok5NILH+VlmKfjJAxFu0WF52KPCbsinh2AvhJjqkXLu2jXrRHn7gPtA0EpKRQncdRL5uM2zO06yexSbI/6Wi3dv8q8=
+provider: heroku
+app: floating-savannah-20311
